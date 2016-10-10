@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+	<title>Document</title>
+</head>
+<style>
+/*	.layer .layer-container img {
+	
+	transition:all 1s ease 0s;
+}*/
+</style>
+<body>
+	<div id="app">
+		<section class='list'>
+		   <section class='box'>		   
+				<header class="header">
+					<div class="jiantou">
+						<span class="arrow">
+							<span class="arrow green"></span>
+						</span>
+					</div>
+				<div class="login"></div>
+			    <h1>自己的图片网</h1>
+				</header>
+				<div class="search hider">
+					<input type="text" placeholder ='搜索你想要的图片'>
+					<span>搜一搜</span>
+				</div>
+			</section>
+			<div class="unit">
+				<div class="qian"></div>
+				<div id="nav">
+					<div class="unite">
+						<ul class="clearfix">
+							<li data-id=0>明星</li>
+							<li data-id=1>美女</li>
+							<li data-id=2>萌宠</li>
+							<li data-id=3>动漫</li>
+							<li data-id=4>游戏</li>
+							<li data-id=5>星座</li>
+							<li data-id=6>壁纸</li>
+							<li data-id=7>唯美</li>
+						</ul>
+					</div>
+				<div class="kon"></div>
+				</div>
+				<div class="jiabtn">＋</div>
+			</div>
+           <div class="erji hide">
+           	  <div class="shang">
+           	  	   <p>频道管理</p>
+           	  	   <span>✘</span>
+           	  </div>
+           	  <ol class="clearfix">
+					<li data-id=1>美女</li>
+					<li data-id=2>萌宠</li>
+					<li data-id=3>动漫</li>
+					<li data-id=4>游戏</li>
+					<li data-id=5>星座</li>
+					<li data-id=6>壁纸</li>
+					<li data-id=7>唯美</li>
+           	  </ol>
+           </div>
+		<div class="image-container">
+			<div class="left-container">
+			</div>
+			<div class="right-container">
+			</div>
+			<div class="go">TOP</div>
+		</div>
+		</section>
+
+		<section class="layer"></section>
+	</div>
+
+	<script type="text/template" id='tpl'>
+        <div class="layer-container" style ='<%=style%>'>
+                <img src="<%=url%>" alt="">
+        </div>		
+        <header class="header hide">
+			    <div class="jiantou">
+					<span class="arrow btn">
+						<span class="arrow black"></span>
+					</span>
+				</div>
+			<div class="login" style="font-weight:bold;">首页</div>
+		    <h1><%=title%></h1>		   
+		</header>
+        <div class="qiu" id='qiu1'>我</div>
+        <div class="qiu" id='qiu2'>爱</div>
+        <div class="qiu" id='qiu3'>你</div>
+	</script>
+<script type="text/javascript" src='static/sea.js'></script>
+<script type="text/javascript" src='static/lib/seajs-css.js'></script>
+<script type="text/javascript" src='static/lib/zepto.js'></script>
+<script type="text/javascript" src='static/lib/zepto.touch.js'></script>
+<script type="text/javascript" src='static/lib/underscore.js'></script>
+<script type="text/javascript" src='static/lib/backbone.js'></script>
+<script type="text/javascript">
+	seajs.use('app',function (app){
+		
+		app()
+	})
+</script>
+
+
+</body>
+</html>
